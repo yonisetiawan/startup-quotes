@@ -85,7 +85,7 @@
     <script type="text/javascript">
       function randomQuote() {
         $.ajax({
-            url: "http://localhost:3000",
+            url: "http://ec2-35-167-125-128.us-west-2.compute.amazonaws.com:3000",
             type: "GET",
             success: function(result) {
               document.getElementById("getrandomquote").innerHTML = ""
@@ -103,7 +103,7 @@
       }
       $(document).ready(function() {
         $.ajax({
-            url: "http://localhost:3000",
+            url: "http://ec2-35-167-125-128.us-west-2.compute.amazonaws.com:3000",
             type: "GET",
             success: function(result) {
               var tampung = ""
