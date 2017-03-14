@@ -5,14 +5,14 @@ const modelsQuote = require('../models/index')
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/api/quotes', function(req, res, next) {
     modelsQuote.find({}, function(err, result) {
         if (err) res.send(err)
         else res.send(result)
     })
 });
 
-router.post('/', function(req, res, next) {
+router.post('/api/quotes', function(req, res, next) {
     var addQuote = new modelsQuote({
         imgurl: req.body.imgurl
     })
