@@ -85,7 +85,7 @@
     <script type="text/javascript">
       function randomQuote() {
         $.ajax({
-            url: "http://localhost:3000/api/quotes",
+            url: "/api/quotes",
             type: "GET",
             success: function(result) {
               document.getElementById("getrandomquote").innerHTML = ""
@@ -103,7 +103,7 @@
       }
       $(document).ready(function() {
         $.ajax({
-            url: "http://localhost:3000/api/quotes",
+            url: "/api/quotes",
             type: "GET",
             success: function(result) {
               var tampung = ""
