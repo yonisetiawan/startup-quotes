@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 
 var quoteSchema = new Schema ({
-  imgurl = String,
+  imgurl: String,
 },{
   timestamps: true
 })
